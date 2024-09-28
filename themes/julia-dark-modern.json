@@ -21,109 +21,99 @@
         {
             "scope": "comment",
             "settings": {
-                "foreground": "#6A9955",
+                "foreground": "#6A9955", // Faded green for comments
                 "fontStyle": "italic"
             }
         },
         {
-            "scope": "constant",
+            "scope": [
+                "keyword.control",
+                "keyword.other",
+                "keyword.import",
+                "keyword.function",
+                "storage.type.function.julia"
+            ],
             "settings": {
-                "foreground": "#569cd6"
+                "foreground": "#C586C0" // Purple for keywords
             }
         },
         {
-            "scope": "variable",
+            "scope": [
+                "variable",
+                "meta.definition.variable"
+            ],
             "settings": {
-                "foreground": "#9CDCFE"
+                "foreground": "#9CDCFE" // Light blue for variables
             }
         },
         {
-            "scope": "entity.name.function",
+            "scope": [
+                "entity.name.function",
+                "support.function",
+                "meta.function-call"
+            ],
             "settings": {
-                "foreground": "#DCDCAA"
+                "foreground": "#DCDCAA" // Yellow for function names
             }
         },
         {
-            "scope": "entity.name.type",
+            "scope": [
+                "entity.name.type",
+                "entity.name.class",
+                "support.type",
+                "support.class"
+            ],
             "settings": {
-                "foreground": "#4EC9B0"
+                "foreground": "#4EC9B0" // Teal for classes and types
             }
         },
         {
-            "scope": "keyword.control",
+            "scope": [
+                "string",
+                "constant.other",
+                "string.quoted"
+            ],
             "settings": {
-                "foreground": "#C586C0"
+                "foreground": "#CE9178" // Yellow for strings
             }
         },
         {
-            "scope": "string",
+            "scope": [
+                "constant.numeric",
+                "constant.character"
+            ],
             "settings": {
-                "foreground": "#CE9178"
-            }
-        },
-        {
-            "scope": "storage.type",
-            "settings": {
-                "foreground": "#569cd6"
-            }
-        },
-        {
-            "scope": "keyword",
-            "settings": {
-                "foreground": "#569cd6"
-            }
-        },
-        {
-            "scope": "keyword.operator",
-            "settings": {
-                "foreground": "#D4D4D4"
-            }
-        },
-        {
-            "scope": "meta.preprocessor",
-            "settings": {
-                "foreground": "#569cd6"
-            }
-        },
-        {
-            "scope": "meta.preprocessor.string",
-            "settings": {
-                "foreground": "#ce9178"
-            }
-        },
-        {
-            "scope": "invalid",
-            "settings": {
-                "foreground": "#f44747"
-            }
-        },
-        {
-            "scope": "constant.numeric",
-            "settings": {
-                "foreground": "#b5cea8"
+                "foreground": "#b5cea8" // Light green for numbers and characters
             }
         },
         {
             "scope": "variable.other.constant",
             "settings": {
-                "foreground": "#4FC1FF"
+                "foreground": "#D4D4D4", // White for constants
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "scope": "entity.other.attribute-name",
+            "settings": {
+                "foreground": "#9cdcfe" // Light blue for attributes
             }
         }
     ],
     "semanticTokenColors": {
-        "variable": "#9CDCFE",
-        "function": "#DCDCAA",
-        "parameter": "#9CDCFE",
-        "type": "#4EC9B0",
-        "class": "#4EC9B0",
-        "interface": "#4EC9B0",
-        "enum": "#4EC9B0",
-        "enumMember": "#4FC1FF",
-        "property": "#9CDCFE",
-        "keyword": "#569cd6",
-        "string": "#ce9178",
-        "number": "#b5cea8",
-        "boolean": "#569cd6",
-        "typeParameter": "#4EC9B0"
+        "variable": "#9CDCFE", // Light blue for variables
+        "function": "#DCDCAA", // Yellow for functions
+        "parameter": "#9CDCFE", // Light blue for parameters
+        "type": "#4EC9B0", // Teal for types
+        "class": "#4EC9B0", // Teal for classes
+        "interface": "#4EC9B0", // Teal for interfaces
+        "enum": "#4EC9B0", // Teal for enums
+        "enumMember": "#4FC1FF", // Light blue for enum members
+        "property": "#9CDCFE", // Light blue for properties
+        "keyword": "#C586C0", // Purple for keywords
+        "string": "#CE9178", // Yellow for strings
+        "number": "#b5cea8", // Light green for numbers
+        "boolean": "#569cd6", // Blue for booleans
+        "typeParameter": "#4EC9B0" // Teal for type parameters
     }
 }
