@@ -5,6 +5,8 @@ def test_pathlib():
     assert pathlib.Path("test_files/normal.py").exists()
 
 
+a = test_pathlib()
+
 CONSTANT = 1
 normal_variable = 2
 

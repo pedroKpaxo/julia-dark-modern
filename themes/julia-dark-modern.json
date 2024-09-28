@@ -21,7 +21,7 @@
         {
             "scope": "comment",
             "settings": {
-                "foreground": "#6A9955", // Faded green for comments
+                "foreground": "#6A9955", // Green for comments
                 "fontStyle": "italic"
             }
         },
@@ -30,17 +30,19 @@
                 "keyword.control",
                 "keyword.other",
                 "keyword.import",
+                "keyword.using",
                 "keyword.function",
                 "storage.type.function.julia"
             ],
             "settings": {
-                "foreground": "#C586C0" // Purple for keywords
+                "foreground": "#C586C0" // Purple for keywords and import
             }
         },
         {
             "scope": [
                 "variable",
-                "meta.definition.variable"
+                "meta.definition.variable",
+                "meta.variable.assignment.julia"
             ],
             "settings": {
                 "foreground": "#9CDCFE" // Light blue for variables
@@ -61,40 +63,50 @@
                 "entity.name.type",
                 "entity.name.class",
                 "support.type",
-                "support.class"
+                "support.class",
+                "storage.type.julia"
             ],
             "settings": {
-                "foreground": "#4EC9B0" // Teal for classes and types
+                "foreground": "#4EC9B0" // Teal for classes, types, structs
             }
         },
         {
             "scope": [
                 "string",
                 "constant.other",
-                "string.quoted"
+                "string.quoted",
+                "string.quoted.double",
+                "string.quoted.single"
             ],
             "settings": {
-                "foreground": "#CE9178" // Yellow for strings
+                "foreground": "#CE9178" // Yellowish for strings
             }
         },
         {
             "scope": [
                 "constant.numeric",
-                "constant.character"
+                "constant.character",
+                "constant.other.symbol.julia"
             ],
             "settings": {
-                "foreground": "#b5cea8" // Light green for numbers and characters
+                "foreground": "#b5cea8" // Light green for numbers, characters, and symbols
             }
         },
         {
-            "scope": "variable.other.constant",
+            "scope": [
+                "constant.other.constant.julia",
+                "variable.other.constant.julia"
+            ],
             "settings": {
                 "foreground": "#D4D4D4", // White for constants
                 "fontStyle": "bold"
             }
         },
         {
-            "scope": "entity.other.attribute-name",
+            "scope": [
+                "entity.other.attribute-name",
+                "meta.attribute.julia"
+            ],
             "settings": {
                 "foreground": "#9cdcfe" // Light blue for attributes
             }
@@ -106,14 +118,15 @@
         "parameter": "#9CDCFE", // Light blue for parameters
         "type": "#4EC9B0", // Teal for types
         "class": "#4EC9B0", // Teal for classes
+        "struct": "#4EC9B0", // Teal for classes
         "interface": "#4EC9B0", // Teal for interfaces
         "enum": "#4EC9B0", // Teal for enums
         "enumMember": "#4FC1FF", // Light blue for enum members
         "property": "#9CDCFE", // Light blue for properties
         "keyword": "#C586C0", // Purple for keywords
-        "string": "#CE9178", // Yellow for strings
+        "string": "#CE9178", // Yellowish for strings
         "number": "#b5cea8", // Light green for numbers
         "boolean": "#569cd6", // Blue for booleans
-        "typeParameter": "#4EC9B0" // Teal for type parameters
+        "typeParameter": "#4EC9B0", // Teal for type parameters
     }
 }
