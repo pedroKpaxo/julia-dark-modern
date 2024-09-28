@@ -1,0 +1,30 @@
+{
+    "name": "julia-dark-modern-theme",
+    "displayName": "Julia Dark Modern",
+    "description": "A modern dark theme for Julia inspired by the Python Dark Modern theme.",
+    "version": "1.0.0",
+    "author": {
+        "name": "Pedro Cavalcanti",
+        "email": "pedro@monumentosoftware.com.br"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/pedroKpaxo/julia-dark-modern"
+    },
+    "license": "MIT",
+    "engines": {
+        "vscode": "^1.0.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "Julia Dark Modern",
+                "uiTheme": "vs-dark",
+                "path": "./themes/julia-dark-modern.json"
+            }
+        ]
+    }
+}
